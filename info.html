@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SurvayPage</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  </head>
+
+  <body style="background: #eee">
+    <div class="container">
+      <h1 id="title">Survay Form</h1>
+      <p id="description">Give your feedback on MIUI 10</p>
+      <div class="form">
+        <form id="survey-form" action="">
+          <div class="user-detail">
+            <label for="name" id="name-label">*Name: </label>
+            <input type="text" name="Name" id="name" placeholder="Enter your name" required>
+            <br><br>
+            <label for="email" id="email-label">*Email-ID: </label>
+            <input type="email" name="Email" id="email" placeholder="Enter your Email ID" required>
+            <br><br>
+            <label for="Age" id="number-label">*Age: </label>
+            <input type="number" name="Age" id="number" placeholder="Enter your Age" min="1" max="110" required>
+            <br><br>
+            <p>Which device are you using?</p>
+            <select class="dropmenu" name="dropmenu" id="dropdown">
+              <option disabled selected value>Only these devices</option>
+              <option value="Note-5/pro">Redmi Note 5/pro</option>
+              <option value="mi-mix2">Mi Mix2</option>
+              <option value="Note-4/4x">Redmi Note 4/4x</option>
+            </select>
+          <br>
+        </div>
+          <div id="mi-v">
+          <p style="font-weight: bold">From which MIUI version you are previously on?</p>
+            <input type="radio" name="miui-v" value="miui8"> MIUI8 <br>
+            <input type="radio" name="miui-v" value="miui9"> MIUI9 <br>
+          <br>
+          </div>
+          <div id="likes">
+          <p style="font-weight: bold">What features you like most in MIUI10?</p>
+            <input type="checkbox" name="features" value="recents"> Recents UI <br>
+            <input type="checkbox" name="features" value="response"> Lightning app response <br>
+            <input type="checkbox" name="features" value="camera"> AI Camera <br>
+            <input type="checkbox" name="features" value="notification"> Notification ui <br>
+            <input type="checkbox" name="features" value="messaging"> Improved messaging app <br>
+          <br>
+          </div>
+          <p style="font-weight: bold">feedback</p>
+          <textarea name="feedback" rows="4" cols="60" placeholder="Any suggessions or bug reports here."></textarea>
+          <br><br>
+          <input type="submit" name="submit" value="Submit" id="submit">
+        </form>
+      </div>
+    </div>
+  </body>
+
+</html>
